@@ -1,0 +1,50 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+    <ng-container matColumnDef="_id">
+      <th mat-header-cell *matHeaderCellDef> _id </th>
+      <td mat-cell *matCellDef="let element"> 
+        <a class="btn btn-link" [routerLink]="['/update',element._id]" >{{element._id}}</a>  
+        </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="fname">
+      <th mat-header-cell *matHeaderCellDef> firstName </th>
+      <td mat-cell *matCellDef="let element"> {{element.fname}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="lname">
+      <th mat-header-cell *matHeaderCellDef> lastName </th>
+      <td mat-cell *matCellDef="let element"> {{element.lname}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef> email</th>
+      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+        <th mat-header-cell *matHeaderCellDef> city</th>
+        <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+    </ng-container>
+    <ng-container matColumnDef="pwd">
+      <th mat-header-cell *matHeaderCellDef> pwd</th>
+      <td mat-cell *matCellDef="let element"> {{element.pwd}} </td>
+  </ng-container>
+  <ng-container matColumnDef="ads">
+    <th mat-header-cell *matHeaderCellDef> ads</th>
+    <td mat-cell *matCellDef="let element"> {{element.ads}} </td>
+</ng-container>
+<ng-container matColumnDef="qus">
+  <th mat-header-cell *matHeaderCellDef> qus</th>
+  <td mat-cell *matCellDef="let element"> {{element.qus}} </td>
+</ng-container>
+<ng-container matColumnDef="key">
+  <th mat-header-cell *matHeaderCellDef> key</th>
+  <td mat-cell *matCellDef="let element"> {{element.key}} </td>
+</ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

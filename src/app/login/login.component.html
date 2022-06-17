@@ -1,0 +1,23 @@
+<div class="MatDiv">
+<mat-card class="MatContent">
+    <mat-card-title class="text-center"> hello</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="myform" #formData="ngForm" novalidate>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">UserId</label>
+              <input type="email" formControlName="UserId" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" formControlName="Password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" [disabled]="!formData.valid" (click)="SignIn()" class="btn btn-primary">Sign in</button>
+            <button type="submit" (click)="goto()" class="btn btn-danger">SignUp</button>
+            <button type="submit" (click)="goto1()" class="btn btn-danger">Forgot Password</button>
+          </form>
+
+    </mat-card-content>
+
+</mat-card>
+
+</div>

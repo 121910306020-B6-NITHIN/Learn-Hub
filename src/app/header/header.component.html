@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="nav-link"  [routerLink]="['Home']"><div class="navbar-brand name"  href="#">LEARN HUB</div></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['Home']" href="#">Home</a>
+          </li>
+          <li class="nav-item" style="display:inline-flex">
+            <a class="nav-link" aria-current="page" [routerLink]="['Login']" href="#">Login</a>
+            <a class="nav-link" aria-current="page" [routerLink]="['SignUp']" href="#">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['Courses']" href="#">Courses</a>
+          </li>
+          <!-- <li *ngIf="isAdmin" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Data
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['Data']" href="#">Crud</a></li>
+              <li><a class="dropdown-item" [routerLink]="['content']" href="#">Content</a></li>
+              
+            </ul>
+          </li> -->
+          <li *ngIf="isAdmin" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Data
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>UserData</li>
+              <li class="nav-item dropdown-submenu">
+                <ul class="dropdown-submenu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" (click)="goto()" [routerLink]="['Read']" href="#">Read</a></li>
+                </ul>
+              </li>
+
+              <li><hr class="dropdown-divider"></li>
+
+              <li>ContentData</li>
+              <li class="nav-item dropdown-submenu">
+                <ul class="dropdown-submenu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" (click)="goto1()" [routerLink]="['Read']" href="#">Show</a></li>
+                  <li><a class="dropdown-item" (click)="goto2()" [routerLink]="['Add']" href="#">Add</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="Uname d-flex">
+            <b><h2>Welcome {{username}}</h2></b>
+        </div>
+      </div>
+    </div>
+  </nav>

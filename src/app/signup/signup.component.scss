@@ -1,0 +1,30 @@
+.row{
+    width: 500px;
+
+    margin-left:auto;
+    margin-right:auto;  
+    vertical-align:middle;
+    position: relative;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: aliceblue; 
+    margin-left:auto;
+    margin-right:auto; 
+    margin-top: 5%; 
+    vertical-align:middle;
+    position: relative;
+    border-color: transparent;
+    background-color:#FFD5AA;
+    
+}
+.Details{
+    border-style: solid;
+    border-color: transparent;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.dribbble.com/users/5436944/screenshots/13534972/pink-desert_optimized.gif');
+    background-position: center;
+    background-size: contain,cover;
+    background-size: 100%;
+}

@@ -1,0 +1,41 @@
+<div class="Details">
+<form class="row g-3"  [formGroup]="myform" #formData="ngForm">
+    <div class="col-md-6">
+        <label for="inputFirstName" class="form-label">FirstName</label>
+        <input formControlName="fname" type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col-md-6">
+        <label for="inputLastName" class="form-label">LastName</label>
+        <input formControlName="lname" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+    <div class="col-md-6">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input formControlName="email" type="email" class="form-control" id="inputEmail">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input formControlName="pwd" type="password" class="form-control" id="inputPassword">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input formControlName="ads" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input formControlName="city" type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">security question</label>
+      <input formControlName="qus" type="text" class="form-control" id="inputAddress" placeholder="ask a security question">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">security answer</label>
+      <input formControlName="key" type="text" class="form-control" id="inputAddress" placeholder="security question answer">
+    </div>
+    <div class="col-12">
+      <button type="submit" [disabled]="!formData.valid" (click)="submit()" class="btn btn-primary">SignUp</button>
+      <button type="submit" [routerLink]="['Login']"  (click)="goto()" class="btn btn-primary">Login</button>
+
+    </div>
+  </form>
+</div>

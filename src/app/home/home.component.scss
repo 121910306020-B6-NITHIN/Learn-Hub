@@ -1,0 +1,99 @@
+.mainContainer{
+    border-style: solid;
+    border-color: transparent;
+    background-color: #add8e6;
+}
+
+.contentHeading{
+    font-family: cursive;
+    font-size: large;
+
+}
+.contentMatter{
+    font-family: cursive;
+    padding-left: 5px;
+}
+.card-text{
+    font-family: cursive;
+    font-size: 14px;
+    overflow: hidden;
+}
+.contentBox{
+    border-style:solid;
+    border-color:transparent;
+    border-radius: 15px;
+    width: 85%;
+    align-items: center;
+    position:relative;
+    display:flex;
+    margin-left: 8%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    
+}
+
+.contentBox1{
+    border-style:solid;
+    border-color:transparent;
+    border-radius: 15px;
+    width: 85%;
+    align-items: center;
+    position:relative;
+    display:inline-block;
+    margin-left: 8%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.card{
+    margin: 10px;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 5px;
+    min-height: 350px;
+    max-height: 350px;
+}
+
+.slider{
+    border-style: solid;
+    border-color:darkgray;
+    position: relative;
+    // display: inline-block;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 85%;
+    margin-left: 8%;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 220px;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    padding-left: 30%;
+    position:static;
+    max-height: 200px;
+
+}
+.carousel-control-next{
+    float: left;
+}
+.card-img-top{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: transparent;
+    height: 180px;
+    width: 100%;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: .7s;
+}
+.cardlink{
+    text-decoration: none;
+
+    color: black;
+}

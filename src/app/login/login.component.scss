@@ -1,0 +1,31 @@
+.MatContent{
+    width: 350px;
+    height: 400px;
+    // display: block;
+    margin-left:auto;
+    margin-right:auto;  
+    vertical-align:middle;
+    position: relative;
+    border-radius: 50px;
+    
+}
+.MatDiv{
+    background-color: papayawhip;
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    background-image: url('https://i.pinimg.com/originals/8f/cc/b3/8fccb3ce8ef99294836a46d607407738.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain,cover;
+    background-size: 100%;
+
+}
+
+.btn{
+    margin: 2px;
+    border-radius: 7px;
+}
+
+
+

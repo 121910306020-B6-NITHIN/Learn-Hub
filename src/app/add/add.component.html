@@ -1,0 +1,29 @@
+<div class="dataForm">
+<form class="row g-3" [formGroup]="myForm"  #formData="ngForm">
+    <div class="mb-3">
+      <label for="exampleInputName" class="form-label">Name</label>
+      <input type="text" formControlName="Name" class="form-control" id="exampleInputName">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputSrc" class="form-label">Src</label>
+      <input type="text" formControlName="Src" class="form-control" id="exampleInputSrc">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputDest" class="form-label">Dest</label>
+        <input type="text" formControlName="Dest" class="form-control" id="exampleInputDest">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputContent" class="form-label">Content</label>
+        <input type="text" formControlName="Content" class="form-control" id="exampleInputContent">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputContent" class="form-label">Key</label>
+      <input type="text" formControlName="Key" class="form-control" id="exampleInputContent">
+  </div>
+    
+    <button type="submit" [disabled]="!formData.valid" (click)="submit()" [routerLink]="['Add']" class="btn btn-primary">Submit</button>
+</form>
+</div>
